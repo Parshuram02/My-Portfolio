@@ -1,4 +1,3 @@
-
 ---
 
 # 🌐 Personal Developer Portfolio
@@ -119,7 +118,9 @@ You can easily deploy this project on **Vercel** or **Netlify**:
 
 ## 📸 Preview
 
-> 🎥 *<img width="1908" height="926" alt="image" src="https://github.com/user-attachments/assets/2f2af3c0-c69b-4884-bc8f-3f18e65f75e0" />
+> 🎥 *<img width="1908" height="926" alt="Screenshot 2025-10-28 111729" src="https://github.com/user-attachments/assets/27a35567-64ec-4f99-a5bc-813518004907" />
 *
 
 ---
+
+
