@@ -41,9 +41,10 @@ export const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
             <div
-              key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-            >
+              key={project.id}
+              onClick={() => window.open(project.demoUrl, "_blank")}
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover cursor-pointer transition-transform hover:scale-[1.01]"
+              >
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -92,7 +93,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/Parshuram02?tab=repositories"
           >
             Check My Github <ArrowRight size={16} />
           </a>

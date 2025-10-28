@@ -10,7 +10,10 @@ import {
 
 
 // Skills array
-const skills = [
+const skills = [  
+  // CP & DSA
+  { name: "Data Structures & Algorithms", level: 90, category: "cp", icon: null },
+  { name: "Competitive Programming", level: 95, category: "cp", icon: null },
   // Languages
   { name: "C++", level: 95, category: "languages", icon: SiCplusplus },
   { name: "Python", level: 85, category: "languages", icon: SiPython },
@@ -34,19 +37,17 @@ const skills = [
   { name: "VS Code", level: 95, category: "tools", icon: SiGit },
   { name: "Figma", level: 85, category: "tools", icon: SiFigma },
 
-  // CP & DSA
-  { name: "Data Structures & Algorithms", level: 90, category: "cp", icon: null },
-  { name: "Competitive Programming", level: 95, category: "cp", icon: null },
+
 ];
 
 const categories = [
-  "all",
+  "all","cp",
   "languages",
   "frontend",
   "backend",
   "database",
   "tools",
-  "cp",
+  
 ];
 
 export const SkillsSection = () => {
@@ -117,7 +118,7 @@ export const SkillsSection = () => {
         </div>
 
         {/* 🧠 CP / DSA Stats */}
-{activeCategory === "cp" && (
+{(activeCategory === "cp" || "all") && (
   <div className="mt-12 flex flex-wrap justify-center gap-8 text-center">
     {[
       {
