@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import p1 from "../assets/Projects/p1.png";
 import p2 from "../assets/Projects/p2.png";
+import p3 from "../assets/Projects/p3.png";
 const projects = [
   {
     id: 1,
@@ -20,6 +21,16 @@ const projects = [
     tags: ["TypeScript", "React", "WebSocket.io"],
     demoUrl: "https://encryptedchat.netlify.app/",
     githubUrl: "https://github.com/Parshuram02/Encrypted-Chat",
+  },
+  {
+    id: 3,
+    title: "Axiom Math Ai bot",
+    description:
+      "Axiom Math AI is a full-stack, pedagogical tutoring engine designed to guide students through complex mathematics",
+    image: p3,
+    tags: ["Python", "React", "TensorFlow"],
+    demoUrl: "https://axiom-math-ai-bot.onrender.com/",
+    githubUrl: "https://github.com/Parshuram02/Axiom-Math-AI-Bot",
   },
 ];
 
