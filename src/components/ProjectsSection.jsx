@@ -29,7 +29,7 @@ const projects = [
       "Axiom Math AI is a full-stack, pedagogical tutoring engine designed to guide students through complex mathematics",
     image: p3,
     tags: ["Python", "React", "TensorFlow"],
-    demoUrl: "https://axiom-math-ai-bot.onrender.com/",
+    demoUrl: "https://axiom-math-ai.vercel.app/",
     githubUrl: "https://github.com/Parshuram02/Axiom-Math-AI-Bot",
   },
 ];
