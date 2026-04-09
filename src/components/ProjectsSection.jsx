@@ -32,14 +32,6 @@ const projects = [
     demoUrl: "https://axiom-math-ai.vercel.app/",
     githubUrl: "https://github.com/Parshuram02/Axiom-Math-AI-Bot",
   },
-  {
-  id: 4,
-  title: "Campus Pool - Ride Together, Save Together",
-  description: "A real-time carpooling platform for students to share rides, split costs, and travel safely with features like ride matching, chat, and verified profiles.",
-  image: p4,
-  tags: ["React", "Node.js", "Express", "Socket.io", "MongoDB"],
-  githubUrl: "https://github.com/Parshuram02/Campus-Pool",
-},
 ];
 
 
