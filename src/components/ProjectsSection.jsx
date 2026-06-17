@@ -1,6 +1,7 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import p1 from "../assets/Projects/p1.png";
 import p2 from "../assets/Projects/p2.png";
+import p3 from "../assets/Projects/p3.png";
 const projects = [
   {
     id: 1,
@@ -22,14 +23,26 @@ const projects = [
     githubUrl: "https://github.com/Parshuram02/Encrypted-Chat",
   },
   {
-  id: 3,
+    id: 3,
+    title: "Axiom Math Ai bot",
+    description:
+      "Axiom Math AI is a full-stack, pedagogical tutoring engine designed to guide students through complex mathematics",
+    image: p3,
+    tags: ["Python", "React", "TensorFlow"],
+    demoUrl: "https://axiom-math-ai.vercel.app/",
+    githubUrl: "https://github.com/Parshuram02/Axiom-Math-AI-Bot",
+  },
+  {
+
+  id: 4,
   title: "🚖Campus Pool",
   description: "A real-time carpooling platform for university students. Features instant ride search with geospatial queries, Socket.io group chat, automatic fare splitting, and secure JWT verification.",
-  image: p3, // Replace with your imported image variable (e.g., campusPoolImage)
+  image: p4, // Replace with your imported image variable (e.g., campusPoolImage)
   tags: ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
   demoUrl: "https://campus-pool-puce.vercel.app",
   githubUrl: "https://github.com/Parshuram02/Campus-Pool",
 },
+
 
 ];
 
