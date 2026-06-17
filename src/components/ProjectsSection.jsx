@@ -21,6 +21,16 @@ const projects = [
     demoUrl: "https://encryptedchat.netlify.app/",
     githubUrl: "https://github.com/Parshuram02/Encrypted-Chat",
   },
+  {
+  id: 3,
+  title: "🚖Campus Pool",
+  description: "A real-time carpooling platform for university students. Features instant ride search with geospatial queries, Socket.io group chat, automatic fare splitting, and secure JWT verification.",
+  image: p3, // Replace with your imported image variable (e.g., campusPoolImage)
+  tags: ["React", "Node.js", "MongoDB", "Socket.io", "Tailwind CSS"],
+  demoUrl: "https://campus-pool-puce.vercel.app",
+  githubUrl: "https://github.com/Parshuram02/Campus-Pool",
+},
+
 ];
 
 
