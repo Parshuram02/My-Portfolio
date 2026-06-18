@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, ExternalLink, Github } from "lucide-react";
 import { useState, useRef } from "react";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 import p1 from "../assets/Projects/p1.png";
 import p2 from "../assets/Projects/p2.png";
 import p3 from "../assets/Projects/p3.png";
@@ -49,7 +50,7 @@ const projects = [
 export const ProjectsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef(null);
-  const VISIBLE = 3; // cards visible at once on desktop
+  const { ref: titleRef, isVisible: titleVisible } = useScrollReveal();
 
   const scrollTo = (index) => {
     setActiveIndex(index);
@@ -67,15 +68,18 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
-        </h2>
-
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
-        </p>
+        <div
+          ref={titleRef}
+          className={`text-center mb-12 transition-all duration-700 ${titleVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Featured <span className="text-primary">Projects</span>
+          </h2>
+          <p className="text-center text-muted-foreground max-w-2xl mx-auto">
+            Here are some of my recent projects. Each project was carefully
+            crafted with attention to detail, performance, and user experience.
+          </p>
+        </div>
 
         {/* Carousel Wrapper */}
         <div className="relative">
@@ -98,7 +102,7 @@ export const ProjectsSection = () => {
             {projects.map((project, idx) => (
               <div
                 key={project.id}
-                className="group flex-shrink-0 w-[85vw] sm:w-[48%] lg:w-[31%] bg-card rounded-xl overflow-hidden shadow-md border border-border/40 card-hover cursor-pointer snap-start transition-all duration-300"
+                className="group flex-shrink-0 w-[85vw] sm:w-[48%] lg:w-[31%] rounded-xl overflow-hidden shadow-md border border-border/30 cursor-pointer snap-start transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/40 glass-card"
                 onClick={(e) => {
                   if (e.target.closest("a")) return;
                   window.open(project.demoUrl, "_blank");

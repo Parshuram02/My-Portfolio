@@ -46,9 +46,19 @@ export const HeroSection = () => {
     >
       <div className="container max-w-4xl mx-auto z-10 text-center">
         <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold mb-2 text-glow text-foreground">
-            <span className="opacity-0 animate-fade-in">Hello, I'm </span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+          <h1 className="text-5xl md:text-7xl font-bold mb-2">
+            <span className="text-foreground opacity-0 animate-fade-in">Hello, I'm </span>
+            <span
+              className="opacity-0 animate-fade-in-delay-1"
+              style={{
+                background: "linear-gradient(135deg, #a78bfa, #818cf8, #38bdf8, #a78bfa)",
+                backgroundSize: "300% 300%",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                animation: "gradientShift 4s ease infinite, fade-in 0.7s ease-out 0.2s forwards",
+              }}
+            >
               Prashant
             </span>
           </h1>

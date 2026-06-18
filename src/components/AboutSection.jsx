@@ -1,11 +1,18 @@
 import profileImage from "../assets/p_yfinal.jpg";
 import resumePDF from "../assets/prashant_resume.pdf";
 import { SiLeetcode, SiCodeforces, SiCodechef, SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export const AboutSection = () => {
+  const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
   return (
     <section id="about" className="py-24 bg-background/50 backdrop-blur-lg">
-      <div className="container max-w-6xl mx-auto px-6 text-center">
+      <div
+        ref={ref}
+        className={`container max-w-6xl mx-auto px-6 text-center transition-all duration-700 ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
         <h2 className="text-5xl font-extrabold mb-12 text-glow">
           About<span className="text-primary"> Me</span>
         </h2>
