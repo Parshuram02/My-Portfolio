@@ -4,6 +4,21 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 const hackathons = [
   {
     id: 1,
+    date: "July 2026",
+    rank: "🏆 Top 29 Teams (Top 75 Coder)",
+    rankColor: "text-yellow-400",
+    rankBg: "bg-yellow-400/10 border-yellow-400/40",
+    dotColor: "bg-yellow-400",
+    event: "Amazon HackOn 6.0",
+    organizer: "Amazon, Bangalore",
+    description: "Built a second life commerce platform for handling returned products in Amazon. Ranked TOP 29 among 21,000+ teams and recognized as a TOP 75 coder among 70,000+ participants.",
+    image: new URL("../assets/Projects/amazon_hackon_6.png", import.meta.url).href,
+    linkedin: "https://www.linkedin.com/posts/prashant-singh-62301827b_hackonwithamazon-hackathon-ai-ugcPost-7484256626233737217-K90n/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAEQq-nsBYlVYktr3aK1jbtydl4nCxlaudcA",
+    tags: ["AWS", "React", "Bedrock"],
+    icon: Trophy,
+  },
+  {
+    id: 2,
     date: "May 2026",
     rank: "🥇 1st Prize",
     rankColor: "text-yellow-400",
@@ -18,7 +33,7 @@ const hackathons = [
     icon: Trophy,
   },
   {
-    id: 2,
+    id: 3,
     date: "Dec–Jan 2026",
     rank: "✅ Round 2 Qualified",
     rankColor: "text-purple-400",
@@ -33,7 +48,7 @@ const hackathons = [
     icon: Star,
   },
   {
-    id: 3,
+    id: 4,
     date: "July 2025",
     rank: "🥇 1st Rank",
     rankColor: "text-yellow-400",
@@ -48,7 +63,7 @@ const hackathons = [
     icon: Trophy,
   },
   {
-    id: 4,
+    id: 5,
     date: "Feb 2025",
     rank: "🥉 3rd Rank",
     rankColor: "text-orange-400",
@@ -63,7 +78,7 @@ const hackathons = [
     icon: Award,
   },
   {
-    id: 5,
+    id: 6,
     date: "Sep 2024",
     rank: "✅ Round 2 Qualified",
     rankColor: "text-blue-400",
@@ -210,7 +225,7 @@ export const AchievementsSection = () => {
             <Trophy className="text-yellow-400" size={28} />
           </div>
           <p className="text-muted-foreground text-sm">
-            5 hackathons · 2 🥇 · 1 🥉 · 2 national qualifications — hover a card for details
+            6 hackathons · 1 Top 29 · 2 🥇 · 1 🥉 · 2 national qualifications — hover a card for details
           </p>
         </div>
 
