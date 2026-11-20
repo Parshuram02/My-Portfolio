@@ -5,6 +5,7 @@ import p1 from "../assets/Projects/p1.png";
 import p2 from "../assets/Projects/p2.png";
 import p3 from "../assets/Projects/p3.png";
 import p4 from "../assets/Projects/p4.png";
+import breathaheadImg from "../assets/Projects/breathahead.png";
 
 const projects = [
   {
@@ -18,6 +19,15 @@ const projects = [
   },
   {
     id: 2,
+    title: "BreathAhead",
+    description: "A near-real-time satellite intelligence and early-warning platform that transforms NASA VIIRS 375m thermal telemetry and atmospheric wind fields into 12–24h predictive smoke arrival warnings, sector-wise ETAs, and automated school safety protocols for Delhi-NCR.",
+    image: breathaheadImg,
+    tags: ["Python", "JavaScript", "Leaflet.js", "NASA FIRMS API", "Open-Meteo", "Vercel", "AWS SAM"],
+    demoUrl: "https://breathahead-web.vercel.app/",
+    githubUrl: "https://github.com/Parshuram02/BreathAhead",
+  },
+  {
+    id: 3,
     title: "🔒 Encrypted-Chat",
     description:
       "Encrypted-Chat is a real-time, end-to-end encrypted chat platform that allows users to create private chat rooms and communicate securely. No logs, no tracking—just pure privacy.",
@@ -27,7 +37,7 @@ const projects = [
     githubUrl: "https://github.com/Parshuram02/Encrypted-Chat",
   },
   {
-    id: 3,
+    id: 4,
     title: "Axiom Math AI Bot",
     description:
       "Axiom Math AI is a full-stack, pedagogical tutoring engine designed to guide students through complex mathematics with step-by-step intelligent explanations.",
@@ -37,7 +47,7 @@ const projects = [
     githubUrl: "https://github.com/Parshuram02/Axiom-Math-AI-Bot",
   },
   {
-    id: 4,
+    id: 5,
     title: "🚖 Campus Pool",
     description: "A real-time carpooling platform for university students. Features instant ride search with geospatial queries, Socket.io group chat, automatic fare splitting, and secure JWT verification.",
     image: p4,
