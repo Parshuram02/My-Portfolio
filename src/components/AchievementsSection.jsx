@@ -4,6 +4,21 @@ import { useScrollReveal } from "../hooks/useScrollReveal";
 const hackathons = [
   {
     id: 1,
+    date: "Sep 2026",
+    rank: "🏅 National Semi-Finalist",
+    rankColor: "text-blue-400",
+    rankBg: "bg-blue-400/10 border-blue-400/40",
+    dotColor: "bg-blue-400",
+    event: "Flipkart GRiD 8.0",
+    organizer: "Flipkart",
+    description: "National Semi-Finalist at Flipkart GRiD 8.0. Solved good level of complex Data Structures and Algorithms (DSA) problems under competitive time constraints.",
+    image: new URL("../assets/Projects/flipkart_grid.png", import.meta.url).href,
+    linkedin: null,
+    tags: ["DSA", "Problem Solving", "Competitive Programming"],
+    icon: Trophy,
+  },
+  {
+    id: 2,
     date: "July 2026",
     rank: "🏆 Top 29 Teams (Top 75 Coder)",
     rankColor: "text-yellow-400",
@@ -18,7 +33,7 @@ const hackathons = [
     icon: Trophy,
   },
   {
-    id: 2,
+    id: 3,
     date: "May 2026",
     rank: "🥇 1st Prize",
     rankColor: "text-yellow-400",
@@ -33,7 +48,7 @@ const hackathons = [
     icon: Trophy,
   },
   {
-    id: 3,
+    id: 4,
     date: "Dec–Jan 2026",
     rank: "✅ Round 2 Qualified",
     rankColor: "text-purple-400",
@@ -48,7 +63,7 @@ const hackathons = [
     icon: Star,
   },
   {
-    id: 4,
+    id: 5,
     date: "July 2025",
     rank: "🥇 1st Rank",
     rankColor: "text-yellow-400",
@@ -63,7 +78,7 @@ const hackathons = [
     icon: Trophy,
   },
   {
-    id: 5,
+    id: 6,
     date: "Feb 2025",
     rank: "🥉 3rd Rank",
     rankColor: "text-orange-400",
@@ -78,7 +93,7 @@ const hackathons = [
     icon: Award,
   },
   {
-    id: 6,
+    id: 7,
     date: "Sep 2024",
     rank: "✅ Round 2 Qualified",
     rankColor: "text-blue-400",
@@ -225,7 +240,7 @@ export const AchievementsSection = () => {
             <Trophy className="text-yellow-400" size={28} />
           </div>
           <p className="text-muted-foreground text-sm">
-            6 hackathons · 1 Top 29 · 2 🥇 · 1 🥉 · 2 national qualifications — hover a card for details
+            7 hackathons · 1 National Semi-Finalist · 1 Top 29 · 2 🥇 · 1 🥉 · 2 national qualifications — hover a card for details
           </p>
         </div>
 

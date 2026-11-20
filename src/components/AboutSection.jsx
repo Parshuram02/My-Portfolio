@@ -45,7 +45,8 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground text-lg leading-relaxed">
-              🏆 <span className="text-primary font-semibold">1st Prize</span> at Campus Beats Hackathon ·{" "}
+              🏆 <span className="text-primary font-semibold">National Semi-Finalist</span> at Flipkart GRiD 8.0 ·{" "}
+              <span className="text-primary font-semibold">1st Prize</span> at Campus Beats Hackathon ·{" "}
               <span className="text-primary font-semibold">1st Rank</span> at Enliven-2 ·{" "}
               <span className="text-primary font-semibold">3rd Rank</span> at PICT Web-Weaver ·{" "}
               Qualified Round 2 — Hackoona Matata (IIIT Kottayam).
